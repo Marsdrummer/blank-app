@@ -101,9 +101,9 @@ path = os.path.dirname(__file__)
 today = date.today()
 
 
-st.title('Welcome to the PowerPoint Generator!')
+st.title('FST to PPT')
 
-st.subheader('This web app uses data from Yahoo Finance to create PowerPoint slides')
+st.subheader('Use data from Yahoo Finance to create PowerPoint slides')
 
 user_input = st.text_input(label='Enter company ticker. For example: AAPL for Apple or TSLA for Tesla')
 
@@ -187,7 +187,7 @@ elif submit and user_input != "":
                 logo_im = 'logo.png'
 
                 # add logo to the slide
-                add_image(prs.slides[1], image=logo_im, left=Inches(1.2), width=Inches(2), top=Inches(0.5))
+                add_image(prs.slides[1], image=logo_im, left=Inches(10), width=Inches(2), top=Inches(0.5))
                 os.remove('logo.png')
 
 
